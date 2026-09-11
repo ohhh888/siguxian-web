@@ -1,16 +1,21 @@
 /* 菁鹿四股弦 PWA 离线缓存 Service Worker */
-var CACHE = 'julu-siguxian-v8';
+var CACHE = 'julu-siguxian-v9';
 var APP_SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
   './polyfills.js',
-  './assets/index-CLiQKpXA.js',
-  './assets/index-nkH502I6.css',
-  './assets/index-nkH502I6.legacy.css',
+  './assets/index-CsfB30sb.js',
+  './assets/index-BxI7I5bZ.css',
+  './assets/index-BxI7I5bZ.legacy.css',
   './icons/icon-192.png',
   './icons/icon-512.png',
+  './digital-human/jinglu-base.jpg',
+  './digital-human/jinglu-sheng.jpg',
+  './digital-human/jinglu-dan.jpg',
+  './digital-human/jinglu-jing.jpg',
+  './digital-human/jinglu-chou.jpg',
   './audio/打金枝.mp3',
   './audio/斩姚期.mp3',
   './audio/贺后骂殿.mp3',
