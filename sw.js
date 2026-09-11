@@ -1,5 +1,5 @@
 /* 菁鹿四股弦 PWA 离线缓存 Service Worker */
-var CACHE = 'julu-siguxian-v4';
+var CACHE = 'julu-siguxian-v6';
 
 /* 应用外壳：首次安装时全部缓存，之后断网也能完整浏览 */
 var APP_SHELL = [
@@ -7,8 +7,10 @@ var APP_SHELL = [
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
-  './assets/index-CU-639uj.js',
-  './assets/index-CM_LrF50.css',
+  './polyfills.js',
+  './assets/index-Dws9BvPB.js',
+  './assets/index-xU6H0tN3.css',
+  './assets/index-xU6H0tN3.legacy.css',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './audio/打金枝.mp3',
