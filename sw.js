@@ -1,14 +1,12 @@
 /* 菁鹿四股弦 PWA 离线缓存 Service Worker */
-var CACHE = 'julu-siguxian-v7';
-
-/* 应用外壳：首次安装时全部缓存，之后断网也能完整浏览 */
+var CACHE = 'julu-siguxian-v8';
 var APP_SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
   './polyfills.js',
-  './assets/index-CIhwKtYc.js',
+  './assets/index-CLiQKpXA.js',
   './assets/index-nkH502I6.css',
   './assets/index-nkH502I6.legacy.css',
   './icons/icon-192.png',
@@ -24,7 +22,6 @@ var APP_SHELL = [
   './audio/少国公.mp3',
   './audio/女中魁.mp3'
 ];
-
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE)
@@ -32,7 +29,6 @@ self.addEventListener('install', function (e) {
       .then(function () { return self.skipWaiting(); })
   );
 });
-
 self.addEventListener('activate', function (e) {
   e.waitUntil(
     caches.keys()
@@ -42,18 +38,14 @@ self.addEventListener('activate', function (e) {
       .then(function () { return self.clients.claim(); })
   );
 });
-
 self.addEventListener('fetch', function (e) {
   var req = e.request;
   if (req.method !== 'GET') { return; }
   var url = new URL(req.url);
-  /* 只处理同源请求；B站播放器等跨域资源交给浏览器原生缓存 */
   if (url.origin !== location.origin) { return; }
-
   e.respondWith(
     fetch(req)
       .then(function (res) {
-        /* 网络优先：成功则写入缓存供离线使用 */
         if (res && res.status === 200) {
           var copy = res.clone();
           caches.open(CACHE).then(function (c) { return c.put(req, copy); });
@@ -61,7 +53,6 @@ self.addEventListener('fetch', function (e) {
         return res;
       })
       .catch(function () {
-        /* 离线回退：命中缓存，否则回退到应用外壳 */
         return caches.match(req).then(function (m) {
           return m || caches.match('./index.html');
         });
