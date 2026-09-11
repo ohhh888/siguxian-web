@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f3d2e">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="菁鹿四股弦">
+  <meta name="description" content="巨鹿四股弦多模态文化资源库">
+  <title>菁鹿四股弦</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <script>
+    window.csrfToken = "";
+    window.userId = "";
+    window.tenantId = "";
+    window.appId = "cn.julu.siguxian.pwa";
+    window.ENVIRONMENT = "offline";
+    window._appInfo = { name: "菁鹿四股弦" };
+    window.__BASENAME__ = "/";
+  </script>
+  <script>
+    window.__platform__ = {};
+  </script>
+  <script type="module" crossorigin src="./assets/index-CU-639uj.js"></script>
+  <link rel="stylesheet" href="./assets/index-CM_LrF50.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // 注册 Service Worker（离线缓存）
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').catch(function (e) {
+          console.warn('Service Worker 注册失败', e);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

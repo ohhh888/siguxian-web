@@ -1,0 +1,29 @@
+[
+  {
+    "path": "/"
+  },
+  {
+    "path": "/library"
+  },
+  {
+    "path": "/resource/:id"
+  },
+  {
+    "path": "/knowledge-graph"
+  },
+  {
+    "path": "/inheritors"
+  },
+  {
+    "path": "/inheritor/:id"
+  },
+  {
+    "path": "/dashboard"
+  },
+  {
+    "path": "/audience"
+  },
+  {
+    "path": "/admin"
+  }
+]

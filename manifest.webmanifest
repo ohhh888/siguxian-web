@@ -1,0 +1,26 @@
+{
+  "name": "菁鹿四股弦 · 巨鹿四股弦多模态文化资源库",
+  "short_name": "菁鹿四股弦",
+  "description": "巨鹿四股弦多模态文化资源库：整合音频、视频、文本、图像、知识图谱五大模态，构建人机协同文化传承新范式。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf8f3",
+  "theme_color": "#0f3d2e",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
