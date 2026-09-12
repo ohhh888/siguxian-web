@@ -1,12 +1,12 @@
 /* 菁鹿四股弦 PWA 离线缓存 Service Worker */
-var CACHE = 'julu-siguxian-v19';
+var CACHE = 'julu-siguxian-v20';
 var APP_SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
   './polyfills.js',
-  './assets/index-CXYNhgek.js',
+  './assets/index-DkIfq_2S.js',
   './assets/index-CQzMg-yq.css',
   './assets/index-CQzMg-yq.legacy.css',
   './icons/icon-192.png',
