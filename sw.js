@@ -1,14 +1,14 @@
 /* 菁鹿四股弦 PWA 离线缓存 Service Worker */
-var CACHE = 'julu-siguxian-v18';
+var CACHE = 'julu-siguxian-v19';
 var APP_SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
   './polyfills.js',
-  './assets/index-UbTeZJ1d.js',
-  './assets/index-BGbx9mF7.css',
-  './assets/index-BGbx9mF7.legacy.css',
+  './assets/index-CXYNhgek.js',
+  './assets/index-CQzMg-yq.css',
+  './assets/index-CQzMg-yq.legacy.css',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './digital-human/jinglu-base.jpg',
@@ -21,6 +21,11 @@ var APP_SHELL = [
   './digital-human/jinglu-dan-anim.jpg',
   './digital-human/jinglu-jing-anim.jpg',
   './digital-human/jinglu-chou-anim.jpg',
+  './digital-human/jinglu-base-idle.jpg',
+  './digital-human/jinglu-sheng-idle.jpg',
+  './digital-human/jinglu-dan-idle.jpg',
+  './digital-human/jinglu-jing-idle.jpg',
+  './digital-human/jinglu-chou-idle.jpg',
   './audio/打金枝.mp3',
   './audio/斩姚期.mp3',
   './audio/贺后骂殿.mp3',
