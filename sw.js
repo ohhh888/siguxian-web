@@ -1,14 +1,14 @@
 /* 菁鹿四股弦 PWA 离线缓存 Service Worker */
-var CACHE = 'julu-siguxian-v21';
+var CACHE = 'julu-siguxian-v22';
 var APP_SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
   './polyfills.js',
-  './assets/index-BVEJ5SHZ.js',
-  './assets/index-CQzMg-yq.css',
-  './assets/index-CQzMg-yq.legacy.css',
+  './assets/index-CpsoI3s_.js',
+  './assets/index-dCCDgk9U.css',
+  './assets/index-dCCDgk9U.legacy.css',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './digital-human/jinglu-base.jpg',
